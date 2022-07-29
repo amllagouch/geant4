@@ -5,7 +5,7 @@
 #include "G4VisManager.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-
+// #include "G4UnitsTable.hh"
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
@@ -31,6 +31,7 @@ int main(int argc, char** argv)
   UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
   UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
 	ui->SessionStart();
-  G4cout << "Hello, World!\n"; 
+  G4cout << "Hello, World!\n";
+  G4cout << "Hello, World!\n";
 	return 0;
 }

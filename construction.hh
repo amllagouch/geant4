@@ -9,6 +9,7 @@
 #include "G4NistManager.hh"
 
 #include "G4SystemOfUnits.hh"
+#include "detector.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -17,5 +18,8 @@ public:
   ~MyDetectorConstruction();
 
   virtual G4VPhysicalVolume *Construct();
+  virtual void ConstructSDandField();
+private:
+  G4LogicalVolume *logicDetector;
 };
 #endif

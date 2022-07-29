@@ -6,8 +6,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ai/sim/action.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/action.cc.o"
   "/home/ai/sim/construction.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/construction.cc.o"
+  "/home/ai/sim/detector.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/detector.cc.o"
   "/home/ai/sim/generator.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/generator.cc.o"
   "/home/ai/sim/physics.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/physics.cc.o"
+  "/home/ai/sim/run.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/run.cc.o"
   "/home/ai/sim/sim.cc" "/home/ai/sim/build/CMakeFiles/sim.dir/sim.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -14,7 +14,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
   // H2O->AddElement(nist->FindOrBuildElement("O"), 1);
   // G4Material* lAr = new G4Material("liquidArgon", 18., 39.95*g/mole,1.390*g/cm3);
 
-  // define the World Material
+  // Define the World Material
   G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
 
   G4Box *solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m, 0.5*m);

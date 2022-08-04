@@ -4,18 +4,28 @@ MySensitiveDetector::MySensitiveDetector(G4String name) : G4VSensitiveDetector(n
 MySensitiveDetector::~MySensitiveDetector(){}
 
 G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROHist){
-  G4Track *track = aStep->GetTrack();
-  track->SetTrackStatus(fStopAndKill);
-  G4StepPoint *preStepPoint = aStep->GetPreStepPoint();
+  // G4Track *track = aStep->GetTrack();
+  // track->SetTrackStatus(fStopAndKill);
+
   G4StepPoint *postStepPoint = aStep->GetPostStepPoint();
-  G4ThreeVector posPhoton = preStepPoint->GetPosition();
-  // G4cout<< "photon position: " << posPhoton << G4endl;
+
+  G4ThreeVector postPosPhoton = postStepPoint->GetPosition();
+
+  G4double postEnergy = postStepPoint->GetKineticEnergy();
+  G4double totalEnergy = postStepPoint->GetTotalEnergy();
+
+  G4cout<< "Photon position: " << postPosPhoton << G4endl;
+  // G4cout << "Energy: " << postEnergy << G4endl;
+  // G4cout << "Total Energy: " << totalEnergy << G4endl;
 
   const G4VTouchable *touchable = aStep->GetPreStepPoint()->GetTouchable();
   G4int copyNo = touchable->GetCopyNumber();
-  // G4cout << "Copy Number: " << copyNo << G4endl;
+  // G4cout << "Sensitive Detector Number: " << copyNo << G4endl;
   G4VPhysicalVolume *physVol = touchable->GetVolume();
   G4ThreeVector posDetector = physVol->GetTranslation();
+
+  // G4double totalEnergy = physVol->GetTotalEnergyDeposit();
+  // G4cout << "Total energy deposit: " << totalEnergy << G4endl;
   G4cout << "Detector position: " << posDetector << G4endl;
 
   G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
@@ -24,6 +34,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROHis
   man->FillNtupleDColumn(1, posDetector[0]);
   man->FillNtupleDColumn(2, posDetector[1]);
   man->FillNtupleDColumn(3, posDetector[2]);
+  man->FillNtupleDColumn(4, postEnergy);
   man->AddNtupleRow(0);
   return 0;
 }

@@ -128,9 +128,22 @@ CMakeFiles/sim.dir/detector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/detector.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai/sim/detector.cc -o CMakeFiles/sim.dir/detector.cc.s
 
+CMakeFiles/sim.dir/event.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/event.cc.o: ../event.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/event.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/event.cc.o -c /home/ai/sim/event.cc
+
+CMakeFiles/sim.dir/event.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/event.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ai/sim/event.cc > CMakeFiles/sim.dir/event.cc.i
+
+CMakeFiles/sim.dir/event.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/event.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai/sim/event.cc -o CMakeFiles/sim.dir/event.cc.s
+
 CMakeFiles/sim.dir/generator.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/generator.cc.o: ../generator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/generator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/generator.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/generator.cc.o -c /home/ai/sim/generator.cc
 
 CMakeFiles/sim.dir/generator.cc.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/sim.dir/generator.cc.s: cmake_force
 
 CMakeFiles/sim.dir/physics.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/physics.cc.o: ../physics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/physics.cc.o -c /home/ai/sim/physics.cc
 
 CMakeFiles/sim.dir/physics.cc.i: cmake_force
@@ -156,7 +169,7 @@ CMakeFiles/sim.dir/physics.cc.s: cmake_force
 
 CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/run.cc.o: ../run.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/run.cc.o -c /home/ai/sim/run.cc
 
 CMakeFiles/sim.dir/run.cc.i: cmake_force
@@ -167,15 +180,30 @@ CMakeFiles/sim.dir/run.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/run.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai/sim/run.cc -o CMakeFiles/sim.dir/run.cc.s
 
+CMakeFiles/sim.dir/stepping.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/stepping.cc.o: ../stepping.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/stepping.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/stepping.cc.o -c /home/ai/sim/stepping.cc
+
+CMakeFiles/sim.dir/stepping.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/stepping.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ai/sim/stepping.cc > CMakeFiles/sim.dir/stepping.cc.i
+
+CMakeFiles/sim.dir/stepping.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/stepping.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ai/sim/stepping.cc -o CMakeFiles/sim.dir/stepping.cc.s
+
 # Object files for target sim
 sim_OBJECTS = \
 "CMakeFiles/sim.dir/sim.cc.o" \
 "CMakeFiles/sim.dir/action.cc.o" \
 "CMakeFiles/sim.dir/construction.cc.o" \
 "CMakeFiles/sim.dir/detector.cc.o" \
+"CMakeFiles/sim.dir/event.cc.o" \
 "CMakeFiles/sim.dir/generator.cc.o" \
 "CMakeFiles/sim.dir/physics.cc.o" \
-"CMakeFiles/sim.dir/run.cc.o"
+"CMakeFiles/sim.dir/run.cc.o" \
+"CMakeFiles/sim.dir/stepping.cc.o"
 
 # External object files for target sim
 sim_EXTERNAL_OBJECTS =
@@ -184,9 +212,11 @@ sim: CMakeFiles/sim.dir/sim.cc.o
 sim: CMakeFiles/sim.dir/action.cc.o
 sim: CMakeFiles/sim.dir/construction.cc.o
 sim: CMakeFiles/sim.dir/detector.cc.o
+sim: CMakeFiles/sim.dir/event.cc.o
 sim: CMakeFiles/sim.dir/generator.cc.o
 sim: CMakeFiles/sim.dir/physics.cc.o
 sim: CMakeFiles/sim.dir/run.cc.o
+sim: CMakeFiles/sim.dir/stepping.cc.o
 sim: CMakeFiles/sim.dir/build.make
 sim: /home/ai/software/geant4/geant4-v11.0.2-install/lib/libG4Tree.so
 sim: /home/ai/software/geant4/geant4-v11.0.2-install/lib/libG4FR.so
@@ -236,7 +266,7 @@ sim: /home/ai/software/geant4/geant4-v11.0.2-install/lib/libG4global.so
 sim: /home/ai/software/geant4/geant4-v11.0.2-install/lib/libG4clhep.so
 sim: /home/ai/software/geant4/geant4-v11.0.2-install/lib/libG4ptl.so.0.0.2
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ai/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

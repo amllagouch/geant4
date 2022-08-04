@@ -31,15 +31,15 @@ int main(int argc, char** argv)
 
 	G4UImanager *UImanager = G4UImanager::GetUIpointer();
   if(ui){
-    UImanager->ApplyCommand("/control/execute vis.mac");
-    // UImanager->ApplyCommand("/vis/open OGL");
-    // UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
-    // UImanager->ApplyCommand("/vis/drawVolume");
-    // UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
-    // UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
-    // UImanager->ApplyCommand("/vis/scene/add/scale 10cm");
-    // UImanager->ApplyCommand("/vis/scene/add/axes");
-    // UImanager->ApplyCommand("/vis/scene/add/eventID");
+    // UImanager->ApplyCommand("/control/execute vis.mac");
+    UImanager->ApplyCommand("/vis/open OGL");
+    UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
+    UImanager->ApplyCommand("/vis/drawVolume");
+    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
+    UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
+    UImanager->ApplyCommand("/vis/scene/add/scale 10cm");
+    UImanager->ApplyCommand("/vis/scene/add/axes");
+    UImanager->ApplyCommand("/vis/scene/add/eventID");
     ui->SessionStart();
   }
   else{

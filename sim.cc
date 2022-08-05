@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 
 	runManager->Initialize();
 
-  G4UIExecutive *ui = 0;
+  G4UIExecutive *ui = nullptr;
   if(argc==1){
     ui = new G4UIExecutive(argc, argv);
   }
@@ -31,6 +31,8 @@ int main(int argc, char** argv)
 
 	G4UImanager *UImanager = G4UImanager::GetUIpointer();
   if(ui){
+    // interactive mode
+
     // UImanager->ApplyCommand("/control/execute vis.mac");
     UImanager->ApplyCommand("/vis/open OGL");
     UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
@@ -43,6 +45,8 @@ int main(int argc, char** argv)
     ui->SessionStart();
   }
   else{
+    // batch mode
+
     G4String command = "/control/execute ";
     G4String filename = argv[1];
     UImanager->ApplyCommand(command+filename);

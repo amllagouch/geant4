@@ -40,7 +40,6 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
                                                        logicWorld, false, 0, true);
 
   // Array of sensitive detectors
-
   G4Box *solidDetector = new G4Box("solidDetector", // name
                                    0.005*m, // width
                                    0.005*m, // length
@@ -60,9 +59,6 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
                                                           true);
     }
   }
-
-  // MySensitiveDetector *sensDet = new MySensitiveDetector("SensitiveDetector");
-  // logicDetector->SetSensitiveDetector(sensDet);
   return physWorld;
 }
 
